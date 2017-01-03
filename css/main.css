@@ -1,0 +1,355 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {height: 100%;}
+body {
+	height: 100%;
+	font: 14px/18px 'Times New Roman', Times, sans-serif;
+	background-color: #fff;
+}
+
+ol, ul {list-style: none;}
+a, a:hover {text-decoration: none;}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.left {float: left;}
+.right {float: right;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+position: absolute;
+padding: 20px 0;
+top: 20px;
+width: 100%;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+  padding-top: 5px;
+
+}
+
+nav li {
+  float: left;
+  margin-right: 40px;
+}
+
+nav li:last-child {margin-right: 0;}
+
+nav li a {
+text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
+color: #ffffff;
+font: 14px/30px Roboto;
+}
+
+.intro {
+  height: 800px;
+  padding-top: 514px;
+  background: #222 url("../img/bg1.jpg") 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  	background-size: cover;
+}
+
+.intro h1 {
+  text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
+  color: #ffffff;
+  font: 51px/30px Abril Fatface;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
+  color: #ffffff;
+  font: 18px Roboto;
+  margin-bottom: 40px;
+}
+
+.btn {
+width: 220px;
+height: 60px;
+border-radius: 3px;
+border: 3px solid #c19663;
+color: #c19663;
+background-color: rgba(0, 0, 0, 0);
+font: 18px/30px Roboto;
+text-transform: uppercase;
+}
+
+.btn:hover {
+	border: 6px solid #c19663;
+	background-color: #c19663;
+	color: #fff;
+}
+
+.dishes {
+	height: 600px;
+	padding: 67px 104px 210px;
+	text-align: center;
+}
+
+.dishes h1 {
+	margin-bottom: 40px;
+	color: #333333;
+	font: 42px/30px "Abril Fatface";
+}
+
+.dishes p {
+	margin-top: 30px;
+	color: #333333;
+	font: 21px/30px Roboto;
+}
+
+.quotes {
+	height: 400px;
+	background: #222 url("../img/img1.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.quotes p:first-child {
+	padding-top: 78px;
+	color: #f5eae9;
+	font: italic 21px/30px Roboto;
+}
+
+.quotes p:last-child {
+	color: #ffffff;
+	font: 15px/30px Roboto;
+}
+
+.features {
+	height: 400px;
+}
+
+.features h1 {
+	color: #333333;
+	font: 42px/30px "Abril Fatface";
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 71px;
+}
+
+.features-item {
+	float: left;
+	width: 46%;
+	margin-right: 30px;
+}
+
+.features-item p:first-child {
+	margin-right: 0;
+}
+
+.features-item  h3 {
+	color: #333333;
+	font: 21px/30px Roboto;
+	margin-bottom: 15px;
+}
+
+.features-item p {
+	color: #333333;
+	font: 15px Roboto;
+	margin-top: 40px;
+}
+
+.features img {
+	float: left;
+	margin-right: 20px;
+}
+
+.features-bg {
+	height: 400px;
+	background: #222 url("../img/img2.png") center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.features-bg h1 {
+	margin-top: 288px;
+	text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
+	color: #ffffff;
+	font: 42px/30px "Abril Fatface";
+}
+
+.about {
+	height: 400px;
+	background: #222 url("../img/img3.png") center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 105px;
+}
+
+.about-item {
+	padding-top: 62px;
+	height: 190px;
+	background: #222;
+	text-align: center;
+}
+
+.about-item p {
+	text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
+	color: #ffffff;
+	font: 21px Roboto;
+}
+
+.about-item h1 {
+	text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
+	color: #ffffff;
+	font: 42px "Abril Fatface";
+}
+
+.copyright {
+	height: 120px;
+	background: #333333;
+	padding-top: 25px;
+}
+
+.copyright p {
+	color: #fefefe;
+	font: 15px Roboto;
+	margin-top: 40px;
+	margin-left: 75px;
+}
+
+.copyright img {
+	float: left;
+}
