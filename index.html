@@ -10,7 +10,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        
+                  <!-- Slick slider-->
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -30,9 +33,9 @@
     </div>
   <nav>
     <ul>
-      <li><a href="#">Dishes</a></li>
-      <li><a href="#">Quotes</a></li>
-      <li><a href="#">Features</a></li>
+      <li><a href="#dishes">Dishes</a></li>
+      <li><a href="#quotes">Quotes</a></li>
+      <li><a href="#features">Features</a></li>
     </ul>
   </nav>
 </div>
@@ -46,21 +49,22 @@
   </div>
 </section>
 
-<section class="dishes">
+<section class="dishes" id="dishes">
   <div class="container clearfix">
     <h1>Our dishes</h1>
-    <div class="dishes-item left">
-    <a href=""><img src="img/burger.png" alt=""></a>
-    <p class="">Burger</p>
+    <div class="left">
+      <img src="img/burger.png" alt="">
+      <p>Burger</p>
     </div>
-    <div class="dishes-item right">
-    <a href=""><img src="img/steak.png" alt=""></a>
-    <p >Steak</p>
+    <div class="right">
+      <img src="img/steak.png" alt="">
+      <p>Steak</p>
     </div>
-  </div>
+
+</div>
 </section>
 
-<section class="quotes">
+<section class="quotes" id="quotes">
   <div class="container clearfix">
     <div class="quotes-item">
   <p>“Lorem ipsum and other texts.</br>
@@ -70,7 +74,7 @@ We are the best restaurant.“</p>
     </div>
 </section>
 
-<section class="features">
+<section class="features" id="features">
   <div class="container clearfix">
     <h1>Features</h1>
     <div class="features-item">
@@ -105,23 +109,22 @@ We are the best restaurant.“</p>
   <div class="container">
     <div class="logo">
       <a href=""><img src="img/logo-small.png" alt=""></a>
-        </div>
+    </div>
       <p>&copy; PSD template for restaurant landing page “R”</p>
     <nav>
       <ul>
-        <li><a href="#">Dishes</a></li>
-        <li><a href="#">Quotes</a></li>
-        <li><a href="#">Features</a></li>
+        <li><a href="#dishes">Dishes</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#features">Features</a></li>
       </ul>
     </nav>
   </div>
 </footer>
 
-
-
-
-
 </div>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
