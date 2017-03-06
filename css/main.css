@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del,
@@ -139,6 +143,7 @@ textarea {
   width: 960px;
   margin: 0 auto;
 }
+*{  transition: all .2s ease-in-out;}
 
 header {
 position: absolute;
@@ -169,6 +174,7 @@ text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
 color: #ffffff;
 font: 14px/30px Roboto;
 }
+nav li a:hover {color: #c19663;}
 
 .intro {
   height: 800px;
@@ -196,14 +202,14 @@ font: 14px/30px Roboto;
 }
 
 .btn {
-width: 220px;
-height: 60px;
-border-radius: 3px;
-border: 3px solid #c19663;
-color: #c19663;
-background-color: rgba(0, 0, 0, 0);
-font: 18px/30px Roboto;
-text-transform: uppercase;
+	width: 220px;
+	height: 60px;
+	border-radius: 3px;
+	border: 3px solid #c19663;
+	color: #c19663;
+	background-color: rgba(0, 0, 0, 0);
+	font: 18px/30px Roboto;
+	text-transform: uppercase;
 }
 
 .btn:hover {
@@ -217,7 +223,6 @@ text-transform: uppercase;
 	padding: 67px 104px 210px;
 	text-align: center;
 }
-
 .dishes h1 {
 	margin-bottom: 40px;
 	color: #333333;
@@ -289,6 +294,14 @@ text-transform: uppercase;
 	float: left;
 	margin-right: 20px;
 }
+.features img:hover, .logo:hover {
+	-webkit-transform: translateY(-5px);
+		-moz-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		-o-transform: translateY(-5px);
+		transform: translateY(-5px);
+
+}
 
 .features-bg {
 	height: 400px;
@@ -346,10 +359,12 @@ text-transform: uppercase;
 .copyright p {
 	color: #fefefe;
 	font: 15px Roboto;
-	margin-top: 40px;
-	margin-left: 75px;
+	padding-top: 25px;
+	padding-left: 20px;
+	float: left;
 }
 
 .copyright img {
 	float: left;
 }
+
