@@ -81,7 +81,6 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
 }
 
 /* ==========================================================================
@@ -141,15 +140,23 @@ textarea {
 
 .container {
   width: 960px;
+	max-width: 90%;
   margin: 0 auto;
 }
-*{  transition: all .2s ease-in-out;}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 header {
-position: absolute;
-padding: 20px 0;
-top: 20px;
-width: 100%;
+	position: absolute;
+	padding: 20px 0;
+	top: 20px;
+	width: 100%;
+}
+.logo, .btn, .features-item img {
+	transition: all .2s ease-in-out;
 }
 
 .logo {
@@ -170,15 +177,31 @@ nav li {
 nav li:last-child {margin-right: 0;}
 
 nav li a {
+	display: block;
+
 text-shadow: 0 2px 4px rgba(16, 16, 16, 0.75);
 color: #ffffff;
 font: 14px/30px Roboto;
 }
-nav li a:hover {color: #c19663;}
+
+#touch-menu {
+	display: block;
+	font-size: 50px;
+	color: white;
+	text-shadow: 4px 4px 2px rgba(16, 16, 16, 0.75);
+}
+#touch-menu {
+	display: none;
+	padding: 12px 15px;
+}
+
+nav li a:hover, #touch-menu:hover {color: #c19663;}
 
 .intro {
   height: 800px;
+	height: 100%;
   padding-top: 514px;
+	padding-bottom: 90px;
   background: #222 url("../img/bg1.jpg") 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -220,10 +243,14 @@ nav li a:hover {color: #c19663;}
 
 .dishes {
 	height: 600px;
-	padding: 67px 104px 210px;
+	height: 100%;
+	padding-bottom: 100px;
 	text-align: center;
 }
+.dishes-item {width: 47%;float: left;margin-right: 6%;}
+.dishes-item:last-child {margin-right: 0;}
 .dishes h1 {
+	margin-top: 70px;
 	margin-bottom: 40px;
 	color: #333333;
 	font: 42px/30px "Abril Fatface";
@@ -237,6 +264,8 @@ nav li a:hover {color: #c19663;}
 
 .quotes {
 	height: 400px;
+	height: 100%;
+	padding-bottom: 235px;
 	background: #222 url("../img/img1.png");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -258,6 +287,8 @@ nav li a:hover {color: #c19663;}
 
 .features {
 	height: 400px;
+	height: 100%;
+	padding-bottom: 95px;
 }
 
 .features h1 {
@@ -271,7 +302,7 @@ nav li a:hover {color: #c19663;}
 .features-item {
 	float: left;
 	width: 46%;
-	margin-right: 30px;
+	margin-right: 4%;
 }
 
 .features-item p:first-child {
@@ -300,7 +331,6 @@ nav li a:hover {color: #c19663;}
 		-ms-transform: translateY(-5px);
 		-o-transform: translateY(-5px);
 		transform: translateY(-5px);
-
 }
 
 .features-bg {
@@ -317,11 +347,12 @@ nav li a:hover {color: #c19663;}
 	margin-top: 288px;
 	text-shadow: 0 4px 6px rgba(16, 16, 16, 0.75);
 	color: #ffffff;
-	font: 42px/30px "Abril Fatface";
+	font: 42px/40px "Abril Fatface";
 }
 
 .about {
 	height: 400px;
+	height: 100%;
 	background: #222 url("../img/img3.png") center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -329,11 +360,14 @@ nav li a:hover {color: #c19663;}
 	-o-background-size: cover;
 	background-size: cover;
 	padding-top: 105px;
+	padding-bottom: 100px;
 }
 
 .about-item {
 	padding-top: 62px;
+	padding-bottom: 55px;
 	height: 190px;
+	height: 100%;
 	background: #222;
 	text-align: center;
 }
@@ -352,8 +386,11 @@ nav li a:hover {color: #c19663;}
 
 .copyright {
 	height: 120px;
+	height: 100%;
 	background: #333333;
 	padding-top: 25px;
+	padding-bottom: 100px;
+
 }
 
 .copyright p {
@@ -366,4 +403,68 @@ nav li a:hover {color: #c19663;}
 
 .copyright img {
 	float: left;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.intro {  padding-top: 314px;}
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		padding: 10px 0;
+		background: #2e2e2e;
+	}
+	.logo img {
+		height: 37px;
+		width: 40px;
+	}
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: none;
+		padding-top: 0;
+	}
+	.nav li {float: none;margin-right: 0;}
+	.nav li a {
+		color: #fff;
+		border-top: 1px solid #b1b0b0;
+		border-left: 3px solid transparent;
+		background: #3d3d3d;
+		padding-left: 5px;
+	}
+	.nav li:first-child a {border-top: none;}
+	.nav li a:hover {
+		color: #c19663;
+		border-left: 3px solid #c19663;
+		background: #505050;
+	}
+	#touch-menu {
+		display: block;
+		float: right;
+		height: 50px;
+		margin: -5px 0;
+	}
+	.dishes-item {width: 100%;margin-right: 0;margin-bottom: 35px;}
+	.dishes-item:last-child {margin-bottom: 0;}
+	.features-item {
+		width: 100%;
+		margin-right: 0;
+	}
+	.dishes-item img {width: 250px;height: 249px;}
+	.features-item:last-child {margin-top: 30px;}
+	.nav-footer{display: none;}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.dishes-item img {width: 200px;height: 199px;}
+}
+@media only screen and (max-width : 320px) {
+	.intro {padding-top: 200px;}
 }
